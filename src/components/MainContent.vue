@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="mainContent">
         
     </div>
 </template>
@@ -7,12 +7,15 @@
 <script>
     
 export default {
-    name: 'Main',
+    name: 'MainContent',
     data () {
         return {
 
         } 
     },
+    components: {
+        
+    }, 
     methods: {
         
     }

@@ -5,6 +5,8 @@
 </template>
 
 <script>
+
+const Avatar = resolve => require(['./Avatar.vue'], resolve)
     
 export default {
     name: 'Sidebar',
@@ -12,6 +14,9 @@ export default {
         return {
 
         } 
+    },
+    components: {
+        Avatar
     },
     methods: {
         
