@@ -11,6 +11,7 @@
     "lint": "eslint --ext .js,.vue src",
     "bgit": "npm run build && git add . && git commit -m 'optimize' && git push origin master",
     "git": "git add . && git commit -m 'optimize' && git push origin master",
+    "dll": "webpack --config ./build/webpack.dll.config.js --progress",
     "sass": "cnpm install --save sass-loader node-sass",
     "vuex": "cnpm install --save vuex",
     "element": "cnpm install --save element",
