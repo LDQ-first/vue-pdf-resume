@@ -1,6 +1,17 @@
 # vue-pdf-resume
 
-> A Vue.js project
+> A Vue.js PDF Resume
+
+
+## 预览
+
+[预览](http://ldq-first.github.io/vue-pdf-resume/dist/#/)
+
+
+
+
+
+
 
 ## Build Setup
 

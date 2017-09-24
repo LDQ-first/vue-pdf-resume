@@ -1,0 +1,66 @@
+@import './media.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: none;
+  outline: none;
+  height: 100vh;
+  min-width: 320px;
+  background: #EDCFFF;
+}
+
+.fullScreenBtn {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0066FF;
+}
+
+::-webkit-scrollbar {
+        width: 0.25em;    
+    }
+
+::-webkit-scrollbar-track {
+    border-radius: 0.125em;
+    background: #ceb9d1;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 0.125em;
+    border-radius: 0.05em;
+    background: #498bd6 linear-gradient(180deg, #fff,rgba(3,169,244,.5), #0277bd);
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.textOverflow {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+

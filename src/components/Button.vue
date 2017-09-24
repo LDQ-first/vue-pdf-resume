@@ -48,10 +48,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .btn {
-        position: fixed;
-        left: 10px;
-        bottom: 10px;
-
-    }
+    
 </style>

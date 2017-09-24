@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <buttons btnText="内容全屏" Mesg="该功能尚未开发 (＞人＜；)对不起" :isShowMesg="false" 
+    <buttons class="fullScreenBtn" btnText="内容全屏" Mesg="该功能尚未开发 (＞人＜；)对不起" :isShowMesg="false" 
     @click="mainContentFullScreen" />
+    <asides />
   </div>
 </template>
 
 <script>
 const Buttons = resolve => require(['./components/Button.vue'], resolve)
-
+const Asides = resolve => require(['./components/Aside.vue'], resolve)
+import './assets/style/reset.scss'
 
 export default {
   name: 'app',
@@ -18,11 +20,11 @@ export default {
     }
   },
   components: {
-    Buttons
+    Buttons,
+    Asides
   },
   methods: {
     mainContentFullScreen () {
-      console.log('mainContentFullScreen')
       this.$store.commit('FullScreen', true)
     }
   }
@@ -38,18 +40,6 @@ export default {
   color: #2c3e50;
   position: relative;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background: #EDCFFF;
-}
-
 
 
 
