@@ -54,10 +54,11 @@ export default {
             .projects {
                 margin: 0.5em 0;
                 .project {
-                    margin: 0.5em 0;
+                    /*margin: 0.5em 0;*/
                     margin-left: 50px;
                     position: relative;
                     outline: 1px solid lightblue;
+                    padding: 0.5em 0;
                     &::before {
                         content: '';
                         position: absolute;
@@ -67,15 +68,22 @@ export default {
                         height: 1em;
                         background: #2196F3;
                         border-radius: 50%;
+                        z-index: 2;
                     }
                     &::after {
                         content: '';
                         position: absolute;
-                        left: -22px;
+                        left: -23px;
                         top: 4px;
-                        width: 4px;
-                        height: 1em;
+                        width: 2px;
+                        height: 100%;
                         background: #2196F3;
+                        z-index: 1;
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
                     }
                 }
             }
