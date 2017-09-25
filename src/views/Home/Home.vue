@@ -15,11 +15,11 @@
 
 <style scoped lang="scss">
     @import '../../assets/style/media.scss';
-    .home {
+    .home {       
         width: 800px;
         background: #F4F4F4;
         height: 100vh;
-        margin: 0 auto;
+        margin: 4em auto;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
         position: relative;
         z-index: 50;
@@ -29,6 +29,7 @@
         &.fullScreen {
            width: 100vw;
            height: 100vh;
+           margin: 0em auto;
         }
         .cancelfullScreenBtn {
             position: fixed;
