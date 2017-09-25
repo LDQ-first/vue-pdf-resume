@@ -13,7 +13,9 @@
         -->
         <div class="skill">
             <h2 class="title">
-
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jineng"></use>
+                </svg>
                 技能
             </h2>
             <div class="html text">HTML</div>
@@ -26,7 +28,38 @@
             <div class="Webpack text">Webpack</div>
         </div>
         <div class="contact">
-            
+            <h2 class="title">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-lianxifangshi3"></use>
+                </svg>
+                联系方式
+            </h2>
+            <ul class="lists">
+                <li class="list">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shouji"></use>
+                    </svg>
+                    手机：18826136763
+                </li>
+                <li class="list">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wechat-copy"></use>
+                    </svg>
+                    微信：18826136763
+                </li>
+                <li class="list">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-youxiang"></use>
+                    </svg>
+                    163邮箱：18826136763@163.com
+                </li>
+                <li class="list">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-youxiang"></use>
+                    </svg>
+                    qq邮箱：2320975287@qq.com
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -111,6 +144,7 @@ export default {
              color: #FFF;
              width: 100%;
              height: calc(36% + 40px);
+             font-size: 14px;
              .title {
                  font-size: 18px;
              }
@@ -123,8 +157,8 @@ export default {
                              0 0 5px rgba(0,0,0,0.1);
              }
              .html {
-                 width: 90px;
-                 height: 90px;
+                 width: 80px;
+                 height: 80px;
                  border-radius: 50%;
                  background: rgba(226, 76, 41, 0.8);
                  background: rgba(244, 67, 54, 0.8);
@@ -133,8 +167,8 @@ export default {
                  left: 10px;
              }
              .css {
-                 width: 100px;
-                 height: 100px;
+                 width: 90px;
+                 height: 90px;
                  border-radius: 50%;
                  background: rgba(20, 100, 196, 0.8);
                  background: rgba(25, 118, 210, 0.8);
@@ -182,8 +216,8 @@ export default {
                  border-radius: 50%;
                  background: rgba(97, 218, 251, 0.8);
                  position: absolute;
-                 top: 180px;
-                 left: 80px;
+                 top: 160px;
+                 left: 90px;
                  z-index: 13;
              }
              .Nodejs {
@@ -192,8 +226,8 @@ export default {
                  border-radius: 50%;
                  background: rgba(2, 110, 0, 0.8);
                  position: absolute;
-                 top: 110px;
-                 left: 210px;
+                 top: 100px;
+                 left: 200px;
                  z-index: 11;
              }
              .Webpack {
@@ -210,7 +244,18 @@ export default {
         .contact {
             flex: 1;
             width: 100%;
-            outline: 1px solid lightblue;
+            padding: 0.5em 0;
+            color: #FFF;
+            font-size: 14px;
+            .title {
+                font-size: 18px;
+            }
+            .lists {
+                .list {
+                    text-align: left;
+                    margin: 12px 6px;
+                }
+            }
         }
 
     }
