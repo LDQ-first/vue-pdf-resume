@@ -151,6 +151,7 @@ export default {
              font-size: 14px;
              .title {
                  font-size: 18px;
+                 margin-bottom: 1em;
              }
              .text {
                  display: flex;
@@ -248,6 +249,7 @@ export default {
             font-size: 14px;
             .title {
                 font-size: 18px;
+                margin-bottom: 1em;
             }
             .lists {
                 .list {
