@@ -12,7 +12,10 @@
             HTML CSS JavaScript ES6/7 SASS Vue React Nodejs Webpack
         -->
         <div class="skill">
-            <h2 class="title">技能</h2>
+            <h2 class="title">
+
+                技能
+            </h2>
             <div class="html text">HTML</div>
             <div class="css text">CSS</div>
             <div class="JavaScript text">JavaScript(ES3~7)</div>
@@ -21,6 +24,9 @@
             <div class="React text">React</div>
             <div class="Nodejs text">Nodejs</div>
             <div class="Webpack text">Webpack</div>
+        </div>
+        <div class="contact">
+            
         </div>
     </div>
 </template>
@@ -50,7 +56,7 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/style/media.scss';
     .sidebar {
-        padding: 1em 0;
+        padding: 0.5em 0;
         width: 280px;
         height: 100%;
         background: #2196F3;
@@ -84,8 +90,8 @@ export default {
         }
         .name-job {
             width: 100%;
-            padding: 1em 0;
-            background: rgba(0, 0, 0, 0.3);
+            padding: 0.5em 0;
+            background: rgba(103, 58, 183, 0.2);
             .name {
                 color: #EEE;
                 font-size: 20px;
@@ -99,12 +105,12 @@ export default {
             }
         }
         .skill {
+             margin-top: 0.5em;
              position: relative;
              overflow: hidden;
              color: #FFF;
              width: 100%;
-             height: calc(40% + 40px);
-             outline: 1px solid lightblue;
+             height: calc(36% + 40px);
              .title {
                  font-size: 18px;
              }
@@ -121,8 +127,9 @@ export default {
                  height: 90px;
                  border-radius: 50%;
                  background: rgba(226, 76, 41, 0.8);
+                 background: rgba(244, 67, 54, 0.8);
                  position: absolute;
-                 top: 50px;
+                 top: 44px;
                  left: 10px;
              }
              .css {
@@ -130,6 +137,7 @@ export default {
                  height: 100px;
                  border-radius: 50%;
                  background: rgba(20, 100, 196, 0.8);
+                 background: rgba(25, 118, 210, 0.8);
                  position: absolute;
                  top: 40px;
                  left: 80px;
@@ -140,6 +148,7 @@ export default {
                  height: 140px;
                  border-radius: 50% / 70px;
                  background: rgba(248, 222, 31, 0.8);
+                 background: rgba(255, 214, 0, 0.8);
                  position: absolute;
                  top: 50%;
                  left: 50%;
@@ -151,9 +160,10 @@ export default {
                  height: 80px;
                  border-radius: 50%;
                  background: rgba(204, 102, 153, 0.8);
+                 background: rgba(230, 70, 127, 0.8);
                  position: absolute;
                  top: 40px;
-                 left: 160px;
+                 left: 170px;
 
              }
              .Vue {
@@ -170,7 +180,7 @@ export default {
                  width: 100px;
                  height: 100px;
                  border-radius: 50%;
-                 background: rgba(115, 222, 252, 0.8);
+                 background: rgba(97, 218, 251, 0.8);
                  position: absolute;
                  top: 180px;
                  left: 80px;
@@ -196,6 +206,11 @@ export default {
                  right: 10px;
                  z-index: 10;
              }
+        }
+        .contact {
+            flex: 1;
+            width: 100%;
+            outline: 1px solid lightblue;
         }
 
     }
