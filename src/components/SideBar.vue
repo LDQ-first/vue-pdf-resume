@@ -212,7 +212,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(97, 218, 251, 0.8);
                  position: absolute;
-                 top: 160px;
+                 top: 180px;
                  left: 90px;
                  z-index: 13;
              }

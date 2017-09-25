@@ -186,14 +186,35 @@
                         使用ES5， 实现选择作战框架，判定平局，胜败等功能
                     </p>
                 </li>
-                
-                
-                <!--<li class="project">2</li>
-                <li class="project">3</li>
-                <li class="project">4</li>
-                <li class="project">5</li>
-                <li class="project">6</li>-->
             </ul>
+        </div>
+        <div class="educationWrap">
+            <h2 class="title">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiaoyu01"></use>
+                </svg>
+                教育
+            </h2>
+            <div class="education">
+                <div class="birth">
+                     <svg class="icon yingerchezulin" aria-hidden="true">
+                        <use xlink:href="#icon-yingerchezulin"></use>
+                    </svg>
+                    <h3 class="time">1995</h3>
+                </div>
+                <div class="college">
+                    <h3 class="time">2014 ~ 2018</h3>
+                    <p class="content">  
+                        <span class="school text">广东工业大学</span>
+                        <span class="major text">计算机科学与技术</span>
+                        <span class="degree text">本科</span>
+                        <span class="english text">英语四级</span>
+                    </p>  
+                    <svg class="icon jiaoyu01" aria-hidden="true">
+                        <use xlink:href="#icon-jiaoyu01"></use>
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -227,22 +248,23 @@ export default {
         padding: 1em;
         .projectWrap {
              text-align: left;
+             margin-bottom: 0.5em;
             .title {
-                text-align: left;
                 font-size: 18px;
             }
             .projects {
-                margin: 1em 0;
+                margin-top: 0.4em;
+                margin-bottom: 1em;
                 .project {
                     margin-left: 50px;
                     position: relative;
                     /*outline: 1px solid lightblue;*/
-                    padding: 0.2em 0.5em;
+                    padding: 0.5em;
                     &::before {
                         content: '';
                         position: absolute;
                         left: -30px;
-                        top: 4px;
+                        top: 1em;
                         width: 1em;
                         height: 1em;
                         background: #2196F3;
@@ -253,7 +275,7 @@ export default {
                         content: '';
                         position: absolute;
                         left: -23px;
-                        top: 4px;
+                        top: 1em;
                         width: 2px;
                         height: 100%;
                         background: #2196F3;
@@ -278,7 +300,7 @@ export default {
                         }
                         .technology {
                             display: inline-block;
-                            margin: 0 0.4em;
+                            margin: 0 0.5em;
                             .icons {
                                 float: left;
                                 .icon {
@@ -301,5 +323,86 @@ export default {
                 }
             }
         }
+        .educationWrap {
+             text-align: left;
+             .title {
+                 font-size: 18px;
+             }
+             .education {
+                margin: 1em 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .birth {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0.5em;
+                    .icon {
+                        margin: 1em;
+                        &.yingerchezulin {
+                            width: 2.4em; 
+                            height: 2.4em;
+                            border: 2px solid #54B446;
+                        }
+                    }
+                    .time {
+                        font-size: 18px;
+                    }
+                }
+                .college {
+                    margin-left: 2em;
+                    position: relative;
+                    padding: 0.5em;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: calc(100% + 0.3em);
+                        height: 4px;
+                        border-top-right-radius: 2px;
+                        border-bottom-right-radius: 2px;
+                        background: #E8646F;
+                        bottom: -0.5em;
+                        left: -0.3em; 
+                    }
+                    .icon {
+                        &.jiaoyu01 {
+                            position: absolute;
+                            left: -2em;
+                            border: none;
+                            margin: 0;
+                            box-shadow: 0 0 0px 6px #F4F4F4;
+                            z-index: 10;
+                        }
+                    }
+                    .time {
+                         font-size: 18px;
+                         text-align: right;
+                    }
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        
+                        .text {
+                            font-size: 14px;
+                        }
+                        .school {
+
+                        }
+                        .major {
+
+                        }
+                        .degree {
+
+                        }
+                        .english {
+
+                        }
+                    }
+                }
+             }
+        } 
     }
 </style>
