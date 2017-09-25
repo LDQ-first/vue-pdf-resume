@@ -89,7 +89,7 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/style/media.scss';
     .sidebar {
-        padding: 0.5em 0;
+        padding: 1em 0;
         width: 280px;
         height: 100%;
         background: #2196F3;
@@ -123,7 +123,7 @@ export default {
         }
         .name-job {
             width: 100%;
-            padding: 0.5em 0;
+            padding: 1em 0;
             background: rgba(103, 58, 183, 0.2);
             .name {
                 color: #EEE;
@@ -138,12 +138,12 @@ export default {
             }
         }
         .skill {
-             margin-top: 0.5em;
+             margin-top: 1em;
              position: relative;
              overflow: hidden;
              color: #FFF;
              width: 100%;
-             height: calc(36% + 40px);
+             height: calc(36% + 30px + 1em);
              font-size: 14px;
              .title {
                  font-size: 18px;
@@ -160,7 +160,6 @@ export default {
                  width: 80px;
                  height: 80px;
                  border-radius: 50%;
-                 background: rgba(226, 76, 41, 0.8);
                  background: rgba(244, 67, 54, 0.8);
                  position: absolute;
                  top: 44px;
@@ -170,7 +169,6 @@ export default {
                  width: 90px;
                  height: 90px;
                  border-radius: 50%;
-                 background: rgba(20, 100, 196, 0.8);
                  background: rgba(25, 118, 210, 0.8);
                  position: absolute;
                  top: 40px;
@@ -181,7 +179,6 @@ export default {
                  width: 180px;
                  height: 140px;
                  border-radius: 50% / 70px;
-                 background: rgba(248, 222, 31, 0.8);
                  background: rgba(255, 214, 0, 0.8);
                  position: absolute;
                  top: 50%;
@@ -193,7 +190,6 @@ export default {
                  width: 80px;
                  height: 80px;
                  border-radius: 50%;
-                 background: rgba(204, 102, 153, 0.8);
                  background: rgba(230, 70, 127, 0.8);
                  position: absolute;
                  top: 40px;

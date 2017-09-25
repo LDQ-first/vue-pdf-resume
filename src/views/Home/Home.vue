@@ -18,7 +18,7 @@
     .home {       
         width: 800px;
         background: #F4F4F4;
-        height: 100vh;
+        height: 1120px;
         margin: 4em auto;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
         position: relative;
@@ -28,7 +28,7 @@
         align-items: center;
         &.fullScreen {
            width: 100vw;
-           height: 100vh;
+           height: 1120px;
            margin: 0em auto;
         }
         .cancelfullScreenBtn {
