@@ -8,6 +8,20 @@
             <h1 class="name">刘德铨</h1>
             <h2 class="job">前端工程师</h2>
         </div>
+        <!--
+            HTML CSS JavaScript ES6/7 SASS Vue React Nodejs Webpack
+        -->
+        <div class="skill">
+            <h2 class="title">技能</h2>
+            <div class="html text">HTML</div>
+            <div class="css text">CSS</div>
+            <div class="JavaScript text">JavaScript(ES3~7)</div>
+            <div class="Sass text">Sass</div>
+            <div class="Vue text">Vue</div>
+            <div class="React text">React</div>
+            <div class="Nodejs text">Nodejs</div>
+            <div class="Webpack text">Webpack</div>
+        </div>
     </div>
 </template>
 
@@ -83,6 +97,105 @@ export default {
                              0 6px 1px rgba(0,0,0,0.1),
                              0 0 5px rgba(0,0,0,0.1);
             }
+        }
+        .skill {
+             position: relative;
+             overflow: hidden;
+             color: #FFF;
+             width: 100%;
+             height: calc(40% + 40px);
+             outline: 1px solid lightblue;
+             .title {
+                 font-size: 18px;
+             }
+             .text {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 text-shadow: 0 1px 0 #ccc,
+                             0 4px 1px rgba(0,0,0,0.1),
+                             0 0 5px rgba(0,0,0,0.1);
+             }
+             .html {
+                 width: 90px;
+                 height: 90px;
+                 border-radius: 50%;
+                 background: rgba(226, 76, 41, 0.8);
+                 position: absolute;
+                 top: 50px;
+                 left: 10px;
+             }
+             .css {
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 background: rgba(20, 100, 196, 0.8);
+                 position: absolute;
+                 top: 40px;
+                 left: 80px;
+                 z-index: 12;
+             }
+             .JavaScript {
+                 width: 180px;
+                 height: 140px;
+                 border-radius: 50% / 70px;
+                 background: rgba(248, 222, 31, 0.8);
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 z-index: 10;
+             }
+             .Sass {
+                 width: 80px;
+                 height: 80px;
+                 border-radius: 50%;
+                 background: rgba(204, 102, 153, 0.8);
+                 position: absolute;
+                 top: 40px;
+                 left: 160px;
+
+             }
+             .Vue {
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 background: rgba(65, 184, 131, 0.8);
+                 position: absolute;
+                 top: 170px;
+                 left: 10px;
+                 z-index: 9;
+             }
+             .React {
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 background: rgba(115, 222, 252, 0.8);
+                 position: absolute;
+                 top: 180px;
+                 left: 80px;
+                 z-index: 13;
+             }
+             .Nodejs {
+                 width: 70px;
+                 height: 70px;
+                 border-radius: 50%;
+                 background: rgba(2, 110, 0, 0.8);
+                 position: absolute;
+                 top: 110px;
+                 left: 210px;
+                 z-index: 11;
+             }
+             .Webpack {
+                 width: 80px;
+                 height: 80px;
+                 border-radius: 50%;
+                 background: rgba(85, 106, 221, 0.8);
+                 position: absolute;
+                 top: 170px;
+                 right: 10px;
+                 z-index: 10;
+             }
         }
 
     }
