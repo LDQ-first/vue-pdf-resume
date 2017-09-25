@@ -143,7 +143,7 @@ export default {
              overflow: hidden;
              color: #FFF;
              width: 100%;
-             height: calc(36% + 30px + 1em);
+             height: calc(26% + 30px + 1em);
              font-size: 14px;
              .title {
                  font-size: 18px;
@@ -240,7 +240,7 @@ export default {
         .contact {
             flex: 1;
             width: 100%;
-            padding: 0.5em 0;
+            padding: 1em 0;
             color: #FFF;
             font-size: 14px;
             .title {

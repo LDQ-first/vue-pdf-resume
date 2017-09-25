@@ -232,7 +232,7 @@ export default {
                 font-size: 18px;
             }
             .projects {
-                margin: 0.5em 0;
+                margin: 1em 0;
                 .project {
                     margin-left: 50px;
                     position: relative;
@@ -268,7 +268,7 @@ export default {
                         display: flex;
                         justify-content: space-between;
                         font-size: 14px;
-                        margin: 0.2em 0;
+                        margin: 0.4em 0;
                         .title-content {
                             display: flex;
                             justify-content: flex-start;
