@@ -1,6 +1,21 @@
 <template>
     <div class="mainContent">
-        
+        <div class="projectWrap">
+            <h2 class="title">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangmu"></use>
+                </svg>
+                项目
+            </h2>
+            <ul class="projects">
+                <li class="project">1</li>
+                <li class="project">2</li>
+                <li class="project">3</li>
+                <li class="project">4</li>
+                <li class="project">5</li>
+                <li class="project">6</li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -30,5 +45,40 @@ export default {
         flex: 1;
         height: 100%;
         background: #F4F4F4;
+        padding: 0.5em;
+        .projectWrap {
+             text-align: left;
+            .title {
+                text-align: left;
+            }
+            .projects {
+                margin: 0.5em 0;
+                .project {
+                    margin: 0.5em 0;
+                    margin-left: 50px;
+                    position: relative;
+                    outline: 1px solid lightblue;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -30px;
+                        top: 4px;
+                        width: 1em;
+                        height: 1em;
+                        background: #2196F3;
+                        border-radius: 50%;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: -22px;
+                        top: 4px;
+                        width: 4px;
+                        height: 1em;
+                        background: #2196F3;
+                    }
+                }
+            }
+        }
     }
 </style>
