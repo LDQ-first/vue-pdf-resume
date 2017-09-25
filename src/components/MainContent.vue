@@ -216,6 +216,27 @@
                 </div>
             </div>
         </div>
+        <div class="others">
+            <ul class="lists clearfix">
+                <li class="list">
+                    <a class="link" href="https://ldq-first.github.io/" target="_blank">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-bokefenxiang"></use>
+                        </svg>
+                        博客
+                    </a>
+                </li>
+                <li class="list">
+                    <a class="link" href="https://github.com/LDQ-first" target="_blank">
+                         <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                        Github
+                    </a>
+                </li>
+            </ul>
+             
+        </div>
     </div>
 </template>
 
@@ -246,15 +267,17 @@ export default {
         height: 100%;
         background: #F4F4F4;
         padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .projectWrap {
              text-align: left;
-             margin-bottom: 0.5em;
+             margin-bottom: 1em;
             .title {
                 font-size: 18px;
             }
             .projects {
-                margin-top: 0.4em;
-                margin-bottom: 1em;
+                margin: 1em 0;
                 .project {
                     margin-left: 50px;
                     position: relative;
@@ -289,7 +312,7 @@ export default {
                     .title {
                         display: flex;
                         justify-content: space-between;
-                        font-size: 14px;
+                        font-size: 18px;
                         margin: 0.4em 0;
                         .title-content {
                             display: flex;
@@ -319,11 +342,13 @@ export default {
                     
                     .content {
                          font-size: 14px;
+                         
                     }
                 }
             }
         }
         .educationWrap {
+            margin-bottom: 1em;
              text-align: left;
              .title {
                  font-size: 18px;
@@ -404,5 +429,21 @@ export default {
                 }
              }
         } 
+        .others {
+            .lists {
+                margin: 1em 0;
+                .list {
+                    float: left;
+                    margin: 0 1em;
+                    .link {
+                        .icon {
+                            width: 2em;
+                            height: 2em;
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 </style>
