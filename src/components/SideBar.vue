@@ -182,6 +182,9 @@ export default {
                  text-shadow: 0 1px 0 #ccc,
                              0 4px 1px rgba(0,0,0,0.1),
                              0 0 5px rgba(0,0,0,0.1);
+                &:hover {
+                    animation: shakeIcon 1s ease-in;
+                }
              }
              .html {
                  width: 80px;
@@ -210,7 +213,8 @@ export default {
                  position: absolute;
                  top: 50%;
                  left: 50%;
-                 transform: translate(-50%, -50%);
+                 margin-left: -90px;
+                 margin-top: -70px;
                  z-index: 10;
              }
              .Sass {
