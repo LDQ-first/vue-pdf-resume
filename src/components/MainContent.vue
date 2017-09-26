@@ -244,6 +244,14 @@
                         Github
                     </a>
                 </li>
+                <li class="list">
+                    <a class="link" href="http://ldqblog.me/markdown-resume/html/%E7%AE%80%E5%8E%86.html" target="_blank">
+                         <svg class="icon markdown" aria-hidden="true">
+                            <use xlink:href="#icon-markdown"></use>
+                        </svg>
+                        Markdown简历
+                    </a>
+                </li>
             </ul>
              
         </div>
