@@ -19,7 +19,7 @@ export default {
     data () {
         return {
             asideArr: [
-                { tag: 'PDF下载', link: 'https://ldq-first.github.io/vue-pdf-resume/static/result/刘德铨-应聘前端开发-2017.pdf' },
+                { tag: 'PDF下载', link: './static/result/刘德铨-应聘前端开发-2017.pdf' },
                 { tag: '源码', link: 'https://github.com/LDQ-first/vue-pdf-resume' },
                 { tag: 'GitHub', link: 'https://github.com/LDQ-first' },
                 { tag: '在线简历', link: 'http://ldqblog.me/react-resume/dist/#/' }
@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         isFirefox () {
-            return navigator.userAgent.indexOf('Firefox') > -1
+            return navigator.userAgent.indexOf('Firefox') > -1 
         }
     }
 }
