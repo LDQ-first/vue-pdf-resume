@@ -8,26 +8,38 @@
                 <h2 class="job">前端工程师</h2>
             </div>
         </div>
+        <div class="des">
+            <h2 class="title">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-bokefenxiang"></use>
+                </svg>
+                自我描述
+            </h2>
+            <p class="content">我是一个充满热情，有耐心，有强大自我驱动力的前端工程师</p>
+        </div>
        
         <!--
             HTML CSS JavaScript ES6/7 SASS Vue React Nodejs Webpack
         -->
-        <div class="skill">
+        <div class="skillWrap">
             <h2 class="title">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-jineng"></use>
                 </svg>
                 技能
             </h2>
-            <div class="html text">HTML</div>
-            <div class="css text">CSS</div>
-            <div class="JavaScript text">JavaScript(ES3~7)</div>
-            <div class="Sass text">Sass</div>
-            <div class="Vue text">Vue</div>
-            <div class="React text">React</div>
-            <div class="Nodejs text">Nodejs</div>
-            <div class="Webpack text">Webpack</div>
+            <div class="skill">
+                <div class="html text">HTML</div>
+                <div class="css text">CSS</div>
+                <div class="JavaScript text">JavaScript(ES3~7)</div>
+                <div class="Sass text">Sass</div>
+                <div class="Vue text">Vue</div>
+                <div class="React text">React</div>
+                <div class="Nodejs text">Nodejs</div>
+                <div class="Webpack text">Webpack</div>
+            </div>
         </div>
+        
         <div class="contact">
             <h2 class="title">
                 <svg class="icon" aria-hidden="true">
@@ -140,19 +152,29 @@ export default {
                 }
             }
         }
-        
-        .skill {
-             margin-top: 1em;
-             position: relative;
-             overflow: hidden;
-             color: #FFF;
-             width: 100%;
-             height: calc(26% + 30px + 1em);
-             font-size: 14px;
-             .title {
+        .des {
+            padding: 1em 4em;
+            color: #FFF;
+            .title {
+                font-size: 18px;
+                margin-bottom: 1em;
+            }
+        }
+        .skillWrap {
+            width: 100%;
+            height: calc(26% + 30px + 1em);
+            margin-top: 1em;
+            .title {
                  font-size: 18px;
                  margin-bottom: 1em;
              }
+        }
+        .skill {
+             position: relative;
+             overflow: hidden;
+             color: #FFF;
+             height: calc(100% - 30px - 1em);
+             font-size: 14px;
              .text {
                  display: flex;
                  justify-content: center;
@@ -167,7 +189,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(244, 67, 54, 0.8);
                  position: absolute;
-                 top: 44px;
+                 top: 24px;
                  left: 10px;
              }
              .css {
@@ -176,7 +198,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(25, 118, 210, 0.8);
                  position: absolute;
-                 top: 40px;
+                 top: 20px;
                  left: 80px;
                  z-index: 12;
              }
@@ -197,7 +219,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(230, 70, 127, 0.8);
                  position: absolute;
-                 top: 40px;
+                 top: 20px;
                  left: 170px;
 
              }
@@ -207,7 +229,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(65, 184, 131, 0.8);
                  position: absolute;
-                 top: 170px;
+                 top: 160px;
                  left: 10px;
                  z-index: 9;
              }
@@ -217,7 +239,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(97, 218, 251, 0.8);
                  position: absolute;
-                 top: 180px;
+                 top: 170px;
                  left: 90px;
                  z-index: 13;
              }
@@ -227,7 +249,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(2, 110, 0, 0.8);
                  position: absolute;
-                 top: 100px;
+                 top: 90px;
                  left: 200px;
                  z-index: 11;
              }
@@ -237,7 +259,7 @@ export default {
                  border-radius: 50%;
                  background: rgba(85, 106, 221, 0.8);
                  position: absolute;
-                 top: 170px;
+                 top: 160px;
                  right: 10px;
                  z-index: 10;
              }
@@ -247,6 +269,7 @@ export default {
             padding: 1em 0;
             color: #FFF;
             font-size: 14px;
+            padding-left: 10px;
             .title {
                 font-size: 18px;
                 margin-bottom: 1em;

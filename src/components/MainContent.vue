@@ -31,7 +31,7 @@
                             </ul>
                         </div>
                         <a class="sourceCode" href="https://github.com/LDQ-first/react-eyepetizer" title="源码" target="_blank">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon github" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
                         </a>
@@ -65,7 +65,7 @@
                             </ul>
                         </div>
                         <a class="sourceCode" href="https://github.com/LDQ-first/vue-CNode" title="源码" target="_blank">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon github" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
                         </a>
@@ -104,7 +104,7 @@
                             </ul>
                         </div>
                         <a class="sourceCode" href="https://github.com/LDQ-first/Vue-shop" title="源码" target="_blank">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon github" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
                         </a>
@@ -133,7 +133,7 @@
                             </ul>
                         </div>
                         <a class="sourceCode" href="https://github.com/LDQ-first/react-animating-resume" title="源码" target="_blank">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon github" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
                         </a>
@@ -160,7 +160,7 @@
                             </ul>
                         </div>
                         <a class="sourceCode" href="https://github.com/LDQ-first/vue-animating-resume" title="源码" target="_blank">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon github" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
                         </a>
@@ -182,7 +182,7 @@
                             </ul>
                         </div>
                         <a class="sourceCode" href="https://github.com/LDQ-first/frame-Tic-Tac-Toe" title="源码" target="_blank">
-                            <svg class="icon" aria-hidden="true">
+                            <svg class="icon github" aria-hidden="true">
                                 <use xlink:href="#icon-github"></use>
                             </svg>
                         </a>
@@ -192,6 +192,11 @@
                     </p>
                 </li>
             </ul>
+            <div class="more">
+                <a class="link" href="http://ldqblog.me/work/" target="_blank">
+                    更多
+                </a>
+            </div>
         </div>
         <div class="educationWrap">
             <h2 class="title">
@@ -408,6 +413,7 @@ export default {
                                     &.JS {
                                         fill: #F9A825;
                                     }
+                                
                                 }
                             }
                         }
@@ -421,6 +427,19 @@ export default {
                          
                     }
                 }
+            }
+        }
+        .more {
+            float: right;
+            background: #00BCD4;
+            border-radius: 2px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px,
+                        rgba(0, 0, 0, 0.12) 0px 1px 4px;
+            .link {
+                display: inline-block;
+                color: #FFF;
+                padding: 2px 16px;
+
             }
         }
         .educationWrap {
@@ -519,15 +538,13 @@ export default {
                                 fill: #673AB7;
                                 border-color: #673AB7;
                             }
-                            &.github {
-                                fill: #191717;
-                                border-color: #191717;
-                            }
+                            
                         }
                     }
                     
                 }
             }
         }
+        
     }
 </style>
