@@ -325,8 +325,9 @@ export default {
                     border-right-color: transparent;
                 }
                 .link {
+                    display: inline-block;
                     color: #FFF;
-                    padding: 4px 2em;
+                    padding: 0px 2em;
                     position: relative;
                     box-shadow: 0px 0px 4px rgba(0,0,0,0.3),
                             -1px 2px 4px rgba(0,0,0,0.5);
