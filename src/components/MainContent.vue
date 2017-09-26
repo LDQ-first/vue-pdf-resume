@@ -275,6 +275,27 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-color: #00B3ED transparent transparent transparent;
+            border-width: 36px;
+            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3),
+                            -1px 2px 4px rgba(0,0,0,0.5);
+        }
+        &::before {
+            top: -37px;
+            right: -37px;
+            transform: rotateZ(-135deg);
+        }
+        &::after {
+            bottom: -37px;
+            right: -37px;
+            transform: rotateZ(-45deg);
+        }
         .online {
             position: absolute;
             right: 150px;

@@ -36,7 +36,8 @@
             right: 10px;
             top: 10px;
             opacity: 0;
-            z-index: 100;
+            z-index: 1000;
+            border: 1px solid #FFF;
             transition: all 0.5s ease-in-out;
             &:hover {
                 opacity: 1;
