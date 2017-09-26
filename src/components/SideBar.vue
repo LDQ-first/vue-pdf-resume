@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar">
         <div class="avatarWrapper">
-            <img class="border" src="../assets/img/Mask.png">
+            <img class="border" src="../assets/img/Mask.png" v-show="!isFirefox()">
             <div class="avatar" alt="刘德铨" title="刘德铨"></div>
              <div class="name-job">
                 <h1 class="name">刘德铨</h1>
@@ -92,7 +92,9 @@ export default {
         Avatar
     },
     methods: {
-        
+        isFirefox () {
+            return navigator.userAgent.indexOf('Firefox') > -1
+        }
     }
 }
 
@@ -116,6 +118,7 @@ export default {
         .avatarWrapper {
             position: relative;
              width: 100%;
+            height: 252px;
             .avatar {
                 width: 134px;
                 height: 150px;
@@ -136,7 +139,9 @@ export default {
                 z-index: 10;
             }
             .name-job {
-               
+                position: absolute;
+                bottom: 0;
+                width: 100%;
                 padding: 1em 0;
                 background: rgba(103, 58, 183, 0.2);
                 .name {

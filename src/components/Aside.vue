@@ -2,7 +2,9 @@
     <aside class="aside">
         <ul class="lists">
             <li v-for="(item, index) in asideArr" :key="index">
-                <a class="link" :href="item.link" target="_blank" >
+                <a :href="item.link" target="_blank" v-if="isFirefox() && item.tag === 'PDF下载'" download 
+               >{{item.tag}}</a>
+                <a class="link" :href="item.link" target="_blank" v-else>
                     {{item.tag}}
                 </a>
             </li>
@@ -25,7 +27,9 @@ export default {
         } 
     },
     methods: {
-        
+        isFirefox () {
+            return navigator.userAgent.indexOf('Firefox') > -1
+        }
     }
 }
 
