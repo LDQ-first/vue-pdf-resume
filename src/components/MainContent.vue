@@ -1,5 +1,10 @@
 <template>
     <div class="mainContent">
+        <div class="online">
+            <h2 class="title">
+                <a class="link" href="http://ldqblog.me/react-resume/dist/#/" target="_blank">在线简历</a>
+            </h2>
+        </div>
         <div class="projectWrap">
             <h2 class="title">
                 <svg class="icon" aria-hidden="true">
@@ -220,7 +225,7 @@
             <ul class="lists clearfix">
                 <li class="list">
                     <a class="link" href="https://ldq-first.github.io/" target="_blank">
-                        <svg class="icon" aria-hidden="true">
+                        <svg class="icon bokefenxiang" aria-hidden="true">
                             <use xlink:href="#icon-bokefenxiang"></use>
                         </svg>
                         博客
@@ -228,7 +233,7 @@
                 </li>
                 <li class="list">
                     <a class="link" href="https://github.com/LDQ-first" target="_blank">
-                         <svg class="icon" aria-hidden="true">
+                         <svg class="icon github" aria-hidden="true">
                             <use xlink:href="#icon-github"></use>
                         </svg>
                         Github
@@ -270,6 +275,57 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        .online {
+            position: absolute;
+            right: 150px;
+            .title {
+                font-size: 16px;
+                background: #00B3ED;
+                position: relative;
+                &::before, &::after {
+                    content: "";
+                    position: absolute;
+                    border: 18px solid #00B3ED;
+                    bottom: -0.8em;
+                }
+                &::before {
+                    left: -42px;
+                    border-left-width: 36px;
+                    border-left-color: transparent;
+                }
+                &::after {
+                    right: -42px;
+                    border-left-width: 36px;
+                    border-right-color: transparent;
+                }
+                .link {
+                    color: #FFF;
+                    padding: 4px 2em;
+                    position: relative;
+                    box-shadow: 0px 0px 4px rgba(0,0,0,0.3),
+                            -1px 2px 4px rgba(0,0,0,0.5);
+                    z-index: 2;
+                    &::before, &::after {
+                        content: "";
+                        position: absolute;
+                        border-style: solid;
+                        border-color: #005976 transparent transparent transparent;
+                        border-width: 9px;
+                        top: 17px;
+                        z-index: 10;
+                    }
+                    &::before {
+                         left: 3px;
+                         transform: rotateZ(-135deg);
+                    
+                    }
+                    &::after {
+                        right: 3px;
+                        transform: rotateZ(135deg);
+                    }
+                }
+            }
+        }
         .projectWrap {
              text-align: left;
              margin-bottom: 1em;
@@ -281,7 +337,6 @@ export default {
                 .project {
                     margin-left: 50px;
                     position: relative;
-                    /*outline: 1px solid lightblue;*/
                     padding: 0.5em;
                     &::before {
                         content: '';
@@ -439,6 +494,14 @@ export default {
                         .icon {
                             width: 2em;
                             height: 2em;
+                            &.bokefenxiang {
+                                fill: #673AB7;
+                                border-color: #673AB7;
+                            }
+                            &.github {
+                                fill: #191717;
+                                border-color: #191717;
+                            }
                         }
                     }
                     
