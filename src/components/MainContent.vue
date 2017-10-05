@@ -118,7 +118,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="https://ldq-first.github.io/react-animating-resume/build/#/" title="预览" target="_blank">React.js 版的动态响应式简历</a>
+                            <a class="preview" href="https://ldq-first.github.io/react-animating-resume/build/" title="预览" target="_blank">React.js 版的动态响应式简历</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
@@ -145,7 +145,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="https://ldq-first.github.io/vue-animating-resume/dist/#/" title="预览" target="_blank">Vue.js 版的动态响应式简历</a>
+                            <a class="preview" href="https://ldq-first.github.io/vue-animating-resume/dist/" title="预览" target="_blank">Vue.js 版的动态响应式简历</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
