@@ -2,8 +2,8 @@
     <div class="sidebar">
         <div class="avatarWrapper">
            <!-- <img class="border" src="../assets/img/Mask.png" v-show="isChrome()">-->
-            <img class="border" src="../assets/img/Mask.png" v-show="!isChrome()">
-            <div class="avatar" alt="刘德铨" title="刘德铨"></div>
+            <img class="border"  src="../assets/img/Mask.png" v-show="!isNoChrome()">
+            <div class="avatar" :class="{br: isNoChrome()}" alt="刘德铨" title="刘德铨"></div>
              <div class="name-job">
                 <h1 class="name">刘德铨</h1>
                 <h2 class="job">前端工程师</h2>
@@ -93,10 +93,10 @@ export default {
         Avatar
     },
     methods: {
-        isChrome () {
-            console.log(navigator.userAgent.indexOf('Chrome'))
+        isNoChrome () {
             return navigator.userAgent.indexOf('Firefox') > -1 || 
-                   navigator.userAgent.indexOf('Edge') > -1  
+                   navigator.userAgent.indexOf('Edge') > -1 ||
+                   navigator.userAgent.indexOf('Trident') > -1  
         }
     }
 }
@@ -130,9 +130,11 @@ export default {
                 left: 50%;
                 top: 1px;
                 z-index: 2;
-                border-radius: 50%;
                 -webkit-mask-box-image: url('../assets/img/mask.svg');
                 transform: translateX(-50%);
+                &.br {
+                    border-radius: 50%;
+                }
             }
             .border {
                 width: 136px;
