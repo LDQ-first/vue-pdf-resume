@@ -5,7 +5,7 @@
 
 ## 预览
 
-[预览](http://ldq-first.github.io/vue-pdf-resume/dist/#/)
+[预览](http://ldqblog.me/vue-pdf-resume/dist/#/)
 
 
 
