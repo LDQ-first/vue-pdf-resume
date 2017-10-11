@@ -16,7 +16,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="http://ldq-first.github.io/react-eyepetizer/dist/#/" title="预览" target="_blank">React全家桶版开眼</a>
+                            <a class="preview" href="//ldqblog.me/react-eyepetizer/dist/#/" title="预览" target="_blank">React全家桶版开眼</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
@@ -45,7 +45,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="https://ldq-first.github.io/vue-CNode/dist/#/" title="预览" target="_blank">Vue全家桶版CNode社区</a>
+                            <a class="preview" href="//ldqblog.me/vue-CNode/dist/#/" title="预览" target="_blank">Vue全家桶版CNode社区</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
@@ -53,7 +53,7 @@
                                     </svg>
                                 </li>
                                 <li class="icons">
-                                    <svg class="icon" aria-hidden="true">
+                                    <svg class="icon sass" aria-hidden="true">
                                         <use xlink:href="#icon-sass"></use>
                                     </svg>
                                 </li>
@@ -79,11 +79,16 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="http://39.108.141.131/vueshop/#/" title="预览" target="_blank">Vue全家桶+Express+MongoDB商城</a>
+                            <a class="preview" href="http://39.108.141.131/vueshop/#/" title="预览" target="_blank">Vue全家桶商城</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
                                         <use xlink:href="#icon-vuejs"></use>
+                                    </svg>
+                                </li>
+                                <li class="icons">
+                                    <svg class="icon sass" aria-hidden="true">
+                                        <use xlink:href="#icon-sass"></use>
                                     </svg>
                                 </li>
                                 <li class="icons">
@@ -118,7 +123,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="https://ldq-first.github.io/react-animating-resume/build/" title="预览" target="_blank">React.js 版的动态响应式简历</a>
+                            <a class="preview" href="//ldqblog.me/react-animating-resume/build/" title="预览" target="_blank">React.js 版的动态响应式简历</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
@@ -145,7 +150,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="https://ldq-first.github.io/vue-animating-resume/dist/" title="预览" target="_blank">Vue.js 版的动态响应式简历</a>
+                            <a class="preview" href="//ldqblog.me/vue-animating-resume/dist/" title="预览" target="_blank">Vue.js 版的动态响应式简历</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon" aria-hidden="true">
@@ -172,7 +177,7 @@
                 <li class="project">
                     <h3 class="title">
                         <div class="title-content">
-                            <a class="preview" href="http://ldq-first.github.io/frame-Tic-Tac-Toe/" title="预览" target="_blank">使用ES5写的框架井字棋大战</a>
+                            <a class="preview" href="//ldqblog.me/frame-Tic-Tac-Toe/" title="预览" target="_blank">使用ES5写的框架井字棋大战</a>
                             <ul class="technology clearfix">
                                 <li class="icons">
                                     <svg class="icon JS" aria-hidden="true">
@@ -229,7 +234,7 @@
         <div class="others">
             <ul class="lists clearfix">
                 <li class="list">
-                    <a class="link" href="https://ldq-first.github.io/" target="_blank">
+                    <a class="link" href="//ldqblog.me/" target="_blank">
                         <svg class="icon bokefenxiang" aria-hidden="true">
                             <use xlink:href="#icon-bokefenxiang"></use>
                         </svg>
@@ -250,6 +255,14 @@
                             <use xlink:href="#icon-markdown"></use>
                         </svg>
                         Markdown简历
+                    </a>
+                </li>
+                <li class="list">
+                    <a class="link" href="//ldqblog.me/vue-pdf-resume/dist/#/" target="_blank">
+                         <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-PDF--"></use>
+                        </svg>
+                        在线PDF简历
                     </a>
                 </li>
             </ul>
@@ -290,7 +303,7 @@ export default {
         justify-content: space-between;
         position: relative;
         overflow: hidden;
-        &::before, &::after {
+        /*&::before, &::after {
             content: "";
             position: absolute;
             border-style: solid;
@@ -308,10 +321,10 @@ export default {
             bottom: -37px;
             right: -37px;
             transform: rotateZ(-45deg);
-        }
+        }*/
         .online {
             position: absolute;
-            right: 150px;
+            right: 70px;
             .title {
                 font-size: 16px;
                 background: #00B3ED;
@@ -389,7 +402,7 @@ export default {
                         position: absolute;
                         left: -23px;
                         top: 1em;
-                        width: 2px;
+                        width: 3px;
                         height: 100%;
                         background: #2196F3;
                         z-index: 1;
@@ -401,12 +414,13 @@ export default {
                     }
                     .title {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: flex-start;
                         font-size: 18px;
                         margin: 0.4em 0;
                         .title-content {
+                            flex: 1;
                             display: flex;
-                            justify-content: flex-start;
+                            justify-content: space-between;
                         }
                         .preview {
 
@@ -417,12 +431,12 @@ export default {
                             .icons {
                                 float: left;
                                 .icon {
-                                    border-radius: 0;
-                                    border: none;
                                     &.JS {
                                         fill: #F9A825;
                                     }
-                                
+                                    &.sass {
+                                        fill: rgba(230, 70, 127, 0.8);
+                                    }
                                 }
                             }
                         }
@@ -472,7 +486,6 @@ export default {
                         &.yingerchezulin {
                             width: 2.4em; 
                             height: 2.4em;
-                            border: 2px solid #54B446;
                         }
                     }
                     .time {
@@ -491,7 +504,7 @@ export default {
                         height: 4px;
                         border-top-right-radius: 2px;
                         border-bottom-right-radius: 2px;
-                        background: #E8646F;
+                        background: rgba(103, 58, 183, 0.7);
                         bottom: -0.5em;
                         left: -0.3em; 
                     }
@@ -499,9 +512,7 @@ export default {
                         &.jiaoyu01 {
                             position: absolute;
                             left: -2em;
-                            border: none;
                             margin: 0;
-                            box-shadow: 0 0 0px 6px #F4F4F4;
                             z-index: 10;
                         }
                     }
@@ -536,13 +547,16 @@ export default {
         .others {
             .lists {
                 margin: 1em 0;
+                display: flex;
+                justify-content: space-between;
                 .list {
-                    float: left;
-                    margin: 0 1em;
+                   /* float: left;*/
+                   
+                   /* margin: 0 1em;*/
                     .link {
                         .icon {
-                            width: 2em;
-                            height: 2em;
+                            width: 1.5em;
+                            height: 1.5em;
                             &.bokefenxiang {
                                 fill: #673AB7;
                                 border-color: #673AB7;

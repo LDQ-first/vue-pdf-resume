@@ -122,7 +122,7 @@ export default {
             .avatar {
                 width: 134px;
                 height: 150px;
-                background: url('../assets/img/ldq.jpg') no-repeat 0 0 / cover;
+                background: url('../assets/img/user.svg') no-repeat center / cover;
                 position: absolute;
                 left: 50%;
                 top: 1px;
@@ -144,13 +144,12 @@ export default {
                 width: 100%;
                 padding: 1em 0;
                 background: rgba(103, 58, 183, 0.2);
+                color: #EEE;
                 .name {
-                    color: #EEE;
                     font-size: 20px;
                 }
                 .job {
                     font-size: 18px;
-                    color: #ED5527;
                     text-shadow: 0 1px 0 #ccc,
                                 0 6px 1px rgba(0,0,0,0.1),
                                 0 0 5px rgba(0,0,0,0.1);
@@ -179,7 +178,7 @@ export default {
              overflow: hidden;
              color: #FFF;
              height: calc(100% - 30px - 1em);
-             font-size: 14px;
+             font-size: 15px;
              .text {
                  display: flex;
                  justify-content: center;
@@ -214,7 +213,7 @@ export default {
                  width: 180px;
                  height: 140px;
                  border-radius: 50% / 70px;
-                 background: rgba(255, 214, 0, 0.8);
+                 background: rgba(255, 214, 0, 0.6);
                  position: absolute;
                  top: 50%;
                  left: 50%;
