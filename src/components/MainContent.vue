@@ -2,7 +2,7 @@
     <div class="mainContent">
         <div class="online">
             <h2 class="title">
-                <a class="link" href="http://ldqblog.me/react-resume/dist/#/" target="_blank">在线简历</a>
+                <a class="link" href="//ldqblog.me/react-resume/dist/#/" target="_blank">在线简历</a>
             </h2>
         </div>
         <div class="projectWrap">
@@ -198,7 +198,7 @@
                 </li>
             </ul>
             <div class="more">
-                <a class="link" href="http://ldqblog.me/work/" target="_blank">
+                <a class="link" href="//ldqblog.me/work/" target="_blank">
                     更多
                 </a>
             </div>
@@ -250,7 +250,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a class="link" href="http://ldqblog.me/markdown-resume/html/%E7%AE%80%E5%8E%86.html" target="_blank">
+                    <a class="link" href="//ldqblog.me/markdown-resume/html/%E7%AE%80%E5%8E%86.html" target="_blank">
                          <svg class="icon markdown" aria-hidden="true">
                             <use xlink:href="#icon-markdown"></use>
                         </svg>
