@@ -215,10 +215,10 @@
                      <svg class="icon yingerchezulin" aria-hidden="true">
                         <use xlink:href="#icon-yingerchezulin"></use>
                     </svg>
-                    <h3 class="time">1995</h3>
+                    <h3 class="time">1995({{age}}岁)</h3>
                 </div>
                 <div class="college">
-                    <h3 class="time">2014 ~ 2018</h3>
+                    <h3 class="time">2014 ~ 2018(应届)</h3>
                     <p class="content">  
                         <span class="school text">广东工业大学</span>
                         <span class="major text">计算机科学与技术</span>
@@ -277,7 +277,7 @@ export default {
     name: 'MainContent',
     data () {
         return {
-
+            age: new Date().getFullYear() - 1995
         } 
     },
     components: {
@@ -303,6 +303,9 @@ export default {
         justify-content: space-between;
         position: relative;
         overflow: hidden;
+        .icon {
+            fill: rgba(103, 58, 183, 0.7);
+        }
         /*&::before, &::after {
             content: "";
             position: absolute;
@@ -324,12 +327,12 @@ export default {
         }*/
         .online {
             position: absolute;
-            right: 70px;
+            right: 30px;
             .title {
                 font-size: 16px;
                 background: #00B3ED;
                 position: relative;
-                &::before, &::after {
+                /*&::before, &::after {
                     content: "";
                     position: absolute;
                     border: 18px solid #00B3ED;
@@ -344,16 +347,16 @@ export default {
                     right: -42px;
                     border-left-width: 36px;
                     border-right-color: transparent;
-                }
+                }*/
                 .link {
                     display: inline-block;
                     color: #FFF;
-                    padding: 0px 2em;
+                    padding: 4px 2em;
                     position: relative;
-                    box-shadow: 0px 0px 4px rgba(0,0,0,0.3),
-                            -1px 2px 4px rgba(0,0,0,0.5);
+                    /*box-shadow: 0px 0px 4px rgba(0,0,0,0.3),
+                            -1px 2px 4px rgba(0,0,0,0.5);*/
                     z-index: 2;
-                    &::before, &::after {
+                   /* &::before, &::after {
                         content: "";
                         position: absolute;
                         border-style: solid;
@@ -370,7 +373,7 @@ export default {
                     &::after {
                         right: 3px;
                         transform: rotateZ(135deg);
-                    }
+                    }*/
                 }
             }
         }
@@ -393,7 +396,7 @@ export default {
                         top: 1em;
                         width: 1em;
                         height: 1em;
-                        background: #2196F3;
+                        background: #36a6ff;
                         border-radius: 50%;
                         z-index: 2;
                     }
@@ -423,10 +426,10 @@ export default {
                             justify-content: space-between;
                         }
                         .preview {
-
+                            color: #2ba1fe;
                         }
                         .technology {
-                            display: inline-block;
+                            display: none;
                             margin: 0 0.5em;
                             .icons {
                                 float: left;
@@ -557,10 +560,10 @@ export default {
                         .icon {
                             width: 1.5em;
                             height: 1.5em;
-                            &.bokefenxiang {
+                           /* &.bokefenxiang {
                                 fill: #673AB7;
                                 border-color: #673AB7;
-                            }
+                            }*/
                             
                         }
                     }

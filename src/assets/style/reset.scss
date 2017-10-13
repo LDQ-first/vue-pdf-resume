@@ -55,7 +55,7 @@ a {
 .icon {
     width: 1.6em; height: 1.6em;
     vertical-align: middle;
-    fill: rgba(103, 58, 183, 0.7);
+    
     overflow: hidden;
     padding: 2px;
     margin-right: 3px;
@@ -63,14 +63,14 @@ a {
     &:hover {
         animation: shakeIcon 1s ease-in;
     }
-    &.github {
+    /*&.github {
         fill: #191717;
         border-color: #191717;
-    }
-    &.markdown {
+    }*/
+    /*&.markdown {
         fill: #50C28B;
         border-color: #50C28B;
-    }
+    }*/
 }
 
 .textOverflow {

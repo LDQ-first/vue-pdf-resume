@@ -2,7 +2,7 @@
     <div class="sidebar">
         <div class="avatarWrapper">
            <!-- <img class="border" src="../assets/img/Mask.png" v-show="isChrome()">-->
-            <img class="border"  src="../assets/img/Mask.png" v-show="!isNoChrome()">
+        <!--    <img class="border"  src="../assets/img/Mask.png" v-show="!isNoChrome()">-->
             <div class="avatar" :class="{br: isNoChrome()}" alt="刘德铨" title="刘德铨"></div>
              <div class="name-job">
                 <h1 class="name">刘德铨</h1>
@@ -29,15 +29,16 @@
                 </svg>
                 技能
             </h2>
+             <p class="content">熟悉HTML，CSS，JavaScript, 能够使用Vue，React构建单页面应用</p>
             <div class="skill">
-                <div class="html text">HTML</div>
-                <div class="css text">CSS</div>
-                <div class="JavaScript text">JavaScript(ES3~7)</div>
-                <div class="Sass text">Sass</div>
-                <div class="Vue text">Vue</div>
-                <div class="React text">React</div>
-                <div class="Nodejs text">Nodejs</div>
-                <div class="Webpack text">Webpack</div>
+                <div class="html text">HTML(10%)</div>
+                <div class="css text">CSS(10%)</div>
+                <div class="JavaScript text">JavaScript(ES3~7)(20%)</div>
+                <div class="Sass text">Sass(10%)</div>
+                <div class="Vue text">Vue(15%)</div>
+                <div class="React text">React(15%)</div>
+                <div class="Nodejs text">Nodejs(5%)</div>
+                <div class="Webpack text">Webpack(15%)</div>
             </div>
         </div>
         
@@ -108,9 +109,9 @@ export default {
     @import '../assets/style/media.scss';
     .sidebar {
         padding: 1em 0;
-        width: 280px;
+        width: 300px;
         height: 100%;
-        background: #2196F3;
+        background: #36a6ff;
         box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
                     0px 4px 5px 0px rgba(0, 0, 0, 0.14),
                     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -118,23 +119,28 @@ export default {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        .icon {
+            fill: rgba(103, 58, 183, 0.5);
+        }
         .avatarWrapper {
             position: relative;
              width: 100%;
             height: 252px;
             .avatar {
-                width: 134px;
+                /*width: 134px;
+                height: 150px;*/
+                width: 150px;
                 height: 150px;
                 background: url('../assets/img/user.svg') no-repeat center / cover;
                 position: absolute;
                 left: 50%;
                 top: 1px;
                 z-index: 2;
-                -webkit-mask-box-image: url('../assets/img/mask.svg');
+               /* -webkit-mask-box-image: url('../assets/img/mask.svg');*/
                 transform: translateX(-50%);
-                &.br {
+                /*&.br {
                     border-radius: 50%;
-                }
+                }*/
             }
             .border {
                 width: 136px;
@@ -163,6 +169,7 @@ export default {
             }
         }
         .des {
+            display: none;
             padding: 1em 4em;
             color: #FFF;
             .title {
@@ -172,20 +179,26 @@ export default {
         }
         .skillWrap {
             width: 100%;
-            height: calc(26% + 30px + 1em);
+           /* height: calc(26% + 110px + 1em);*/
             margin-top: 1em;
+            color: #FFF;
             .title {
                  font-size: 18px;
                  margin-bottom: 1em;
+             }
+             .content {
+                 padding: 1em;
+                 
              }
         }
         .skill {
              position: relative;
              overflow: hidden;
              color: #FFF;
-             height: calc(100% - 30px - 1em);
-             font-size: 15px;
+            /* height: calc(100% - 30px - 1em);*/
+             font-size: 18px;
              .text {
+                 padding: 0.5em 0;
                  display: flex;
                  justify-content: center;
                  align-items: center;
@@ -197,93 +210,93 @@ export default {
                 }
              }
              .html {
-                 width: 80px;
+                 /*width: 80px;
                  height: 80px;
                  border-radius: 50%;
                  background: rgba(244, 67, 54, 0.8);
                  position: absolute;
                  top: 24px;
-                 left: 10px;
+                 left: 10px;*/
              }
              .css {
-                 width: 90px;
+                /* width: 90px;
                  height: 90px;
                  border-radius: 50%;
                  background: rgba(25, 118, 210, 0.8);
                  position: absolute;
                  top: 20px;
                  left: 80px;
-                 z-index: 12;
+                 z-index: 12;*/
              }
              .JavaScript {
-                 width: 180px;
+                /* width: 180px;
                  height: 140px;
                  border-radius: 50% / 70px;
                  background: rgba(255, 214, 0, 0.6);
                  position: absolute;
-                 top: 50%;
+                 top: 40%;
                  left: 50%;
                  margin-left: -90px;
                  margin-top: -70px;
-                 z-index: 10;
+                 z-index: 10;*/
              }
              .Sass {
-                 width: 80px;
+                 /*width: 80px;
                  height: 80px;
                  border-radius: 50%;
                  background: rgba(230, 70, 127, 0.8);
                  position: absolute;
                  top: 20px;
-                 left: 170px;
+                 left: 170px;*/
 
              }
              .Vue {
-                 width: 100px;
+                /* width: 100px;
                  height: 100px;
                  border-radius: 50%;
                  background: rgba(65, 184, 131, 0.8);
                  position: absolute;
                  top: 160px;
                  left: 10px;
-                 z-index: 9;
+                 z-index: 9;*/
              }
              .React {
-                 width: 100px;
+                /* width: 100px;
                  height: 100px;
                  border-radius: 50%;
                  background: rgba(97, 218, 251, 0.8);
                  position: absolute;
                  top: 170px;
                  left: 90px;
-                 z-index: 13;
+                 z-index: 13;*/
              }
              .Nodejs {
-                 width: 70px;
+                 /*width: 70px;
                  height: 70px;
                  border-radius: 50%;
                  background: rgba(2, 110, 0, 0.8);
                  position: absolute;
                  top: 90px;
                  left: 200px;
-                 z-index: 11;
+                 z-index: 11;*/
              }
              .Webpack {
-                 width: 80px;
+                 /*width: 80px;
                  height: 80px;
                  border-radius: 50%;
                  background: rgba(85, 106, 221, 0.8);
                  position: absolute;
                  top: 160px;
                  right: 10px;
-                 z-index: 10;
+                 z-index: 10;*/
              }
         }
         .contact {
             width: 100%;
             padding: 1em 0;
             color: #FFF;
-            font-size: 14px;
-            padding-left: 10px;
+            font-size: 16px;
+            padding-left: 4px;
             .title {
                 font-size: 18px;
                 margin-bottom: 1em;
