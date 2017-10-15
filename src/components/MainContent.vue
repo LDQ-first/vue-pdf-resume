@@ -174,28 +174,6 @@
                         使用Vue.js, 利用 Async/Await Promise 实现按步骤绘制动态简历，实现了加速、播放、暂停、跳过、重来、下载PDF等功能
                     </p>
                 </li>
-                <li class="project">
-                    <h3 class="title">
-                        <div class="title-content">
-                            <a class="preview" href="//ldqblog.me/frame-Tic-Tac-Toe/" title="预览" target="_blank">使用ES5写的框架井字棋大战</a>
-                            <ul class="technology clearfix">
-                                <li class="icons">
-                                    <svg class="icon JS" aria-hidden="true">
-                                        <use xlink:href="#icon-js1"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="sourceCode" href="https://github.com/LDQ-first/frame-Tic-Tac-Toe" title="源码" target="_blank">
-                            <svg class="icon github" aria-hidden="true">
-                                <use xlink:href="#icon-github"></use>
-                            </svg>
-                        </a>
-                    </h3>
-                    <p class="content">
-                        使用ES5， 实现选择作战框架，判定平局，胜败等功能
-                    </p>
-                </li>
             </ul>
             <div class="more">
                 <a class="link" href="//ldqblog.me/work/" target="_blank">
