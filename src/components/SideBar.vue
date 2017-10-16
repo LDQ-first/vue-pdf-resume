@@ -127,11 +127,11 @@ export default {
              width: 100%;
             height: 252px;
             .avatar {
-                /*width: 134px;
-                height: 150px;*/
-                width: 150px;
+                width: 134px;
                 height: 150px;
-                background: url('../assets/img/user.svg') no-repeat center / cover;
+                /*width: 150px;
+                height: 150px;*/
+                background: url('../assets/img/ldq.jpg') no-repeat 0 0 / cover;
                 position: absolute;
                 left: 50%;
                 top: 1px;
