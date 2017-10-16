@@ -210,15 +210,23 @@
             </div>
         </div>
         <div class="others">
+            <div class="blog">
+                 <a class="link" href="//ldqblog.me/" target="_blank">
+                    <svg class="icon bokefenxiang" aria-hidden="true">
+                        <use xlink:href="#icon-bokefenxiang"></use>
+                    </svg>
+                    博客: http://ldqblog.me  (在线简历在关于选项中)
+                </a>
+            </div>
             <ul class="lists clearfix">
-                <li class="list">
+               <!-- <li class="list">
                     <a class="link" href="//ldqblog.me/" target="_blank">
                         <svg class="icon bokefenxiang" aria-hidden="true">
                             <use xlink:href="#icon-bokefenxiang"></use>
                         </svg>
                         博客
                     </a>
-                </li>
+                </li>-->
                 <li class="list">
                     <a class="link" href="https://github.com/LDQ-first" target="_blank">
                          <svg class="icon github" aria-hidden="true">
@@ -531,9 +539,7 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 .list {
-                   /* float: left;*/
-                   
-                   /* margin: 0 1em;*/
+                   flex: 1; 
                     .link {
                         .icon {
                             width: 1.5em;
